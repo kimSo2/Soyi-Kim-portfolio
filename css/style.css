@@ -1,0 +1,320 @@
+/*reset*/
+*{margin:0;	padding:0;}
+ul{list-style: none;}
+a{outline:0; text-decoration: none; color:#555;}
+img{border: 0;}
+body{font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 300; color:#555;}
+
+
+/*layout*/
+#HOME,#ABOUT,#SERVICES,#WORKS,#CONTACT{width: 100%; height: 980px; clear:both;}
+
+/*네비게이션 바
+nav{width: 100%; height:70px; color: #ededed; background-color: #000; line-height: 70px; }
+nav p{float: left; margin-left: 3%; font-size: 20px;}
+nav ul{float: right; margin-right: 3%; font-size: 19px;}
+nav li{float: left;}
+nav a{color: #ededed; padding: 20px; box-sizing:border-box;}
+nav a:nth-child(5){padding-right: 0px; box-sizing:border-box;}
+nav a:hover{color: #8b9bbb; border-bottom: 4px solid #8b9bbb;}*/
+
+
+/*메인 타이틀*/
+h2{font-size: 50px; text-align: center; padding-top: 150px; box-sizing:border-box;}
+h2 a{border-bottom: 2px solid #8b9bbb; cursor: default;}
+
+/*HOME*/
+#HOME{background-image: url("../images/poligon.jpg"); overflow: hidden;}
+#HOME div{line-height: 150px; text-align: center; margin-top: 19.5%;}
+#HOME h1{font-size: 120px; font-weight: 300;}
+#HOME h3{font-size: 45px; font-weight: 100;}
+
+
+/*ABOUT*/
+#about_wrap1{width:70%; height: 100%; margin: 0 auto;}
+#title{width: 500px; height: 80px; margin: 0 auto; margin-top: 50px;}
+#title p{float: left;}
+#title .marks{font-size: 70px; color: #8b9bbb; float: left; margin-top: 15px;}
+#title .marks:last-child{float: right;}
+#title .ti_text{font-family: 'NBGL'; font-size: 25px; color: #555; padding: 25px; box-sizing:border-box; position: absolute; left: 50%; margin-left: -185px;}
+#about_wrap2{width: 90%; height: 600px; margin:0 auto;}
+
+/*사진*/
+.pictures{width: 480px; height: 480px; float: left; margin: 5% 1% 5% 0%;}
+.pictures article{width: 230px; height: 230px; background-size: 100% 100%;}
+.pictures .box1{float: left; background-image: url("../images/me1.jpg");}
+.pictures .box2{float: right; background-image: url("../images/me2.jpg");}
+.pictures .box3{float: left; background-image: url("../images/me3.jpg"); margin-top: 20px;}
+.pictures .box4{float: right; background-image: url("../images/me4.jpg"); margin-top: 20px;}
+
+/*소개 텍스트*/
+.text{float: right; margin: 11% 0% 7% 1%; font-family: 'NBGL'; color:#555; }
+.text td{padding-bottom: 25px; box-sizing:border-box; }
+.aa{font-family: 'Roboto', sans-serif; vertical-align: top; box-sizing:border-box;}
+.bb{padding-left: 30px;}
+.cc{padding-left: 30px; font-size: 13px; font-family:'Roboto', sans-serif;}
+.text span{font-family:'Roboto', sans-serif; font-size: 15px;}
+
+/*SERVICES & SKILLS*/
+#SERVICES{background-color: #eff0f2;}
+#SERVICES h2{width: 230px; height:35%; margin:0 auto; border-bottom: 2px solid #8b9bbb;}
+#services_wrap{width:60%; height: 50%; margin: 0 auto; margin-top: 40px;}
+.section{float: left; width: 50%; height: 500px; background-image: url("../images/services_icon.png"); background-repeat: no-repeat; background-size: 75% 75%; background-position: center center; position: relative;}
+.s1,.s2,.s3{position: absolute;}
+.s1{top: 185px; left: 235px;}
+.s2{top: 415px; left: 60px;}
+.s3{top: 415px; left: 335px;}
+#skill_graph{float: left; margin: 11% 6% 5% 8%;}
+
+/*WORKS*/
+.blank{width: 100%; height: 8%;}
+
+/*CONTECT*/
+#CONTACT{background-color: #eff0f2;}
+#contact_wrap{width: 50%; height: 100%; margin: 0 auto;}
+#text{width:100%; height: 26%; font-size: 20px; padding-top: 0px; box-sizing:border-box; line-height: 80px; margin-top: 16%; margin-left: 17%; }
+.c1{width: 40%; float: left;}
+.c2{width: 60%; float: right;}
+#sns{width: 35%; height: 10%; margin: 0 auto; margin-top: 11%;}
+.sns1 img{float: left; width: 80px; height: 80px;}
+.sns2 img{float: right; width: 80px; height: 80px;}
+.copyright{width: 80%; height: 2%; margin: 0 auto; margin-top: 12%;}
+.copyright p{text-align: center; font-size: 16px; font-weight: 300;}
+
+
+
+/*네비게이션 바*/
+.page-header-clone .site-logo {
+    font-size: 100%;
+    float: left;
+    margin-left: -20px;
+    line-height: 75px;
+}
+.page-header-clone .primary-nav {
+    float: right;
+    line-height: 75px;
+    height: 75px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(128, 128, 128);
+    display: block;
+}
+.page-header-clone .primary-nav a {
+    color: #ededed; padding: 20px; 
+    box-sizing:border-box;
+    display: block;
+    padding: 0 1.36em;
+}
+.page-header-clone .primary-nav li {
+    float: left;
+}
+.page-header-clone .primary-nav a:hover {
+    background-color: rgb(240, 240, 240);
+}
+.page-header-clone {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    position: fixed;
+    top: -75px;
+    width: 100%;
+    height: 75px;
+    z-index: 20000;
+
+    -webkit-transition: top 0.25s;
+            transition: top 0.25s;
+}
+.page-header-clone > .inner {
+    margin: auto;
+    width: 960px;
+    height: 75px;
+}
+.page-header-clone.visible {
+    top: 0;
+}
+.page-header-clone:hover {
+    opacity: 1;
+}
+
+.page-header-clone .site-logo a {
+    display: block;
+    overflow: hidden;
+    font-size: 24px;
+    color:#fff;
+    font-weight: normal;
+   	height: 75px;
+   	line-height: 75px; 
+   	font-size: 24px;
+}
+.primary-nav{display: none;}
+.page-header-clone .primary-nav a:nth-child(5){padding-right: 0px; box-sizing:border-box;}
+.page-header-clone .primary-nav a:hover{color: #8b9bbb; border-bottom: 4px solid #8b9bbb; box-sizing: border-box;}
+.page-header-clone .inner h3{display: none;}
+.page-header-clone p{display: none;}
+
+
+/*------------responsive layout(반응형)----------------------------*/
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+#HOME {height: 800px}
+#ABOUT{height: 1400px}
+#about_wrap2{width: 100%; height: 1000px; position: relative;}
+.pictures{width: 480px; height: 480px; clear: both; position:absolute; left:50%; margin-left: -240px;}
+.text{clear: both; position: absolute; left: 50%; margin: 67% 0% 0% -28%;}
+#SERVICES{height: 900px}
+#SERVICES h2{height:38%}
+#services_wrap{width:90%; height: 50%; margin: 0 auto; margin-top: 30px; padding-left: 100px; box-sizing:border-box;}
+.section{float: left; width: 45%; height: 450px; background-size: 75% 75%; background-position: center center; position: relative;}
+.s1,.s2,.s3{position: absolute;}
+.s1{top: 185px; left: 195px;}
+.s2{top: 395px; left: 40px;}
+.s3{top: 395px; left: 270px;}
+#WORKS,#CONTACT{height: 980px}
+#contact_wrap{width: 70%}
+}
+
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+#HOME {height: 650px}
+#HOME div{line-height: 130px}
+#HOME h1{font-size: 100px;}
+#HOME h3{font-size: 35px;}
+#ABOUT{height: 1360px}
+#about_wrap2{width: 100%; height: 1000px; position: relative;}
+.pictures{width: 480px; height: 480px; clear: both; position:absolute; left:50%; margin-left: -240px;}
+.text{clear: both; position: absolute; left: 50%; margin: 86% 0% 0% -35%;}
+#SERVICES{height: 1400px}
+#SERVICES h2{height:24%}
+#services_wrap{clear:both; width:70%; height: 50%; margin: 0 auto; margin-top: 0px;}
+.section{width: 100%; height: 600px;}
+.s1{top: 230px; left: 310px;}
+.s2{top: 500px; left: 100px;}
+.s3{top: 500px; left: 450px;}
+#skill_graph{clear:both; margin: 10% 0% 5% 24%;}
+#WORKS{height: 960px}
+#CONTACT{height: 900px}
+#contact_wrap{width: 70%}
+.c1{width: 25%; float: left;}
+.c2{width: 75%; float: right;}
+.sns1 img{width: 60px; height: 60px;}
+.sns2 img{width: 60px; height: 60px;}
+.page-header-clone .site-logo {margin-left: 10px;}
+
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 979px) {
+
+h2{font-size: 25px; padding-top: 90px;}
+#HOME {height: 300px}
+#HOME div{line-height: 50px}
+#HOME h1{font-size: 40px;}
+#HOME h3{font-size: 15px;}
+.inner p{font-size: 10px;}
+#ABOUT{height: 940px}
+#about_wrap1{width:90%; height: 100%; margin: 0 auto;}
+#title{width: 75%; height: 80px; margin-top: 20px;}
+#title .marks{font-size: 40px; margin-top: 36px;}
+#title .ti_text{font-size: 17px; padding: 40px 0px 40px 80px; margin-left: -185px;}
+#about_wrap2{width: 100%; height: 900px; position: relative;}
+.pictures{width: 320px; height: 320px; clear: both; margin: 7% 1% 5% 0%; position:absolute; left:50%; margin-left: -160px;}
+.pictures article{width: 155px; height: 155px; background-size: 100% 100%;}
+.pictures .box3,.pictures .box4{margin-top: 10px;}
+.text{clear: both; position: absolute; left: 26%; top:350px; font-size: 10px;}
+.text td{padding-bottom: 20px;}
+.bb{padding-left: 14px;}
+.cc{display: none;}
+.text span{font-size: 11px;}
+#SERVICES{height: 570px}
+#SERVICES h2{width: 120px; height:35%;}
+#services_wrap{width:80%; height: 50%; margin: 0 auto; margin-top: 10px;}
+.section{display: none;}
+#skill_graph{float: left; margin top: 18%; margin-left: 5%;}
+#WORKS{height: 500px}
+.blank{width: 100%; height: 10%;}
+.slider img{background-size: 130% 130%;}
+#CONTACT{height: 600px}
+#contact_wrap{width: 90%; height: 100%;}
+#text{font-size: 12px; line-height: 50px; margin-top: 16%; margin-bottom:10%; }
+.c1{width: 20%; float: left;}
+.c2{width: 80%; float: right;}
+#sns{margin-top: 7%;}
+.sns1 img{width: 30px; height: 30px;}
+.sns2 img{width: 30px; height: 30px;}
+.copyright p{font-size: 10px;}
+.copyright{margin-top: 6%;}
+.page-header-clone .site-logo {display: none;}
+.page-header-clone .primary-nav {display: none;}
+.page-header-clone .primary-nav a {display: none;}
+.page-header-clone .primary-nav li {display: none;}
+.page-header-clone .primary-nav a:hover {display: none;}
+.page-header-clone {display: none;}
+.page-header-clone > .inner {display: none;}
+.page-header-clone.visible {display: none;}
+.page-header-clone:hover {display: none;}
+.page-header-clone .site-logo a {display: none;}
+.primary-nav{display: none;}
+.page-header-clone .primary-nav a:nth-child(5){display: none;}
+.page-header-clone .primary-nav a:hover{display: none;}
+.page-header-clone .inner h3{display: none;}
+.page-header-clone p{display: none;}
+
+}
+
+
+
+
+@media screen and (max-width: 479px) {
+h2{font-size: 25px; padding-top: 90px;}
+#HOME {height: 300px}
+#HOME div{line-height: 50px}
+#HOME h1{font-size: 40px;}
+#HOME h3{font-size: 15px;}
+.inner p{font-size: 10px;}
+#ABOUT{height: 940px}
+#about_wrap1{width:80%; height: 100%; margin: 0 auto;}
+#title{width: 75%; height: 80px; margin-top: 20px;}
+#title .marks{font-size: 30px; margin-top: 36px;}
+#title .ti_text{font-size: 13px; padding: 40px 0px 40px 80px; margin-left: -165px;}
+#about_wrap2{width: 100%; height: 900px; position: relative;}
+.pictures{width: 320px; height: 320px; clear: both; margin: 7% 1% 5% 0%; position:absolute; left:50%; margin-left: -160px;}
+.pictures article{width: 155px; height: 155px; background-size: 100% 100%;}
+.pictures .box3,.pictures .box4{margin-top: 10px;}
+.text{clear: both; position: absolute; left: 50%; margin: 120% 0% 0% -39%; font-size: 10px;}
+.text td{padding-bottom: 20px;}
+.bb{padding-left: 14px;}
+.cc{display: none;}
+.text span{font-size: 11px;}
+#SERVICES{height: 630px}
+#SERVICES h2{width: 120px; height:30%;}
+#services_wrap{width:80%; height: 50%; margin: 0 auto; margin-top: 10px;}
+.section{display: none;}
+#skill_graph{float: left; margin top: 18%; margin-left: 5%;}
+#WORKS{height: 500px}
+.blank{width: 100%; height: 10%;}
+.slider img{background-size: 130% 130%;}
+#CONTACT{height: 500px}
+#contact_wrap{width: 90%; height: 100%;}
+#text{font-size: 10px; line-height: 50px; margin-top: 16%; margin-bottom:10%; }
+.c1{width: 15%; float: left;}
+.c2{width: 85%; float: right;}
+#sns{margin-top: 7%;}
+.sns1 img{width: 30px; height: 30px;}
+.sns2 img{width: 30px; height: 30px;}
+.copyright p{font-size: 10px;}
+.copyright{margin-top: 6%;}
+.page-header-clone .site-logo {display: none;}
+.page-header-clone .primary-nav {display: none;}
+.page-header-clone .primary-nav a {display: none;}
+.page-header-clone .primary-nav li {display: none;}
+.page-header-clone .primary-nav a:hover {display: none;}
+.page-header-clone {display: none;}
+.page-header-clone > .inner {display: none;}
+.page-header-clone.visible {display: none;}
+.page-header-clone:hover {display: none;}
+.page-header-clone .site-logo a {display: none;}
+.primary-nav{display: none;}
+.page-header-clone .primary-nav a:nth-child(5){display: none;}
+.page-header-clone .primary-nav a:hover{display: none;}
+.page-header-clone .inner h3{display: none;}
+.page-header-clone p{display: none;}
+}
+
+

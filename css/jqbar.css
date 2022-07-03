@@ -1,0 +1,67 @@
+/*horizontal*/
+
+.jqbar
+{
+    position: relative;
+}
+
+.jqbar.horizontal span
+{
+    display: inline-block;
+    margin-left: 7px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.jqbar.horizontal .bar-percent
+{
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 979px) {
+.jqbar.horizontal span{font-size: 11px;}
+.jqbar.horizontal .bar-percent{font-size: 10px;}
+}
+@media screen and (max-width: 479px) {
+.jqbar.horizontal span{font-size: 11px;}
+.jqbar.horizontal .bar-percent{font-size: 10px;}
+}
+/*
+
+.jqbar.vertical
+{
+    text-align: center;
+    display: inline-block;
+}
+.jqbar.vertical span
+{
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+}
+.jqbar.vertical .bar-percent
+{
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    height: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.jqbar.vertical .bar-level-wrapper
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.jqbar.vertical .bar-level
+{
+    position: absolute;
+}
+
+*/

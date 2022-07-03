@@ -1,0 +1,20 @@
+@font-face{
+	font-family: 'NBGR';
+	src: url('NanumBarunGothic.eot');
+	src: local(※), url('NanumBarunGothic.woff') format('woff');
+}
+@font-face{
+	font-family: 'NBGL';
+	src: url('NanumBarunGothicLight.eot');
+	src: local(※), url('NanumBarunGothicLight.woff') format('woff');
+}
+@font-face{
+	font-family: 'NBGUL';
+	src: url('NanumBarunGothicUltraLight.eot');
+	src: local(※), url('NanumBarunGothicUltraLight.woff') format('woff');
+}
+@font-face{
+	font-family: 'NBGB';
+	src: url('NanumBarunGothicBold.eot');
+	src: local(※), url('NanumBarunGothicBold.woff') format('woff');
+}

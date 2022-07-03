@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoyiKim Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jqbar.css">
+<link rel="stylesheet" href="css/jquery.bxslider.min.css">
+<link rel="stylesheet" href="font/font.css">
+<link
+	href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700"
+	rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script>
+	$(function() {
+		$('.silder').bxSlider({
+			controls : true,
+			pager : true,
+			auto : true,
+			mode : 'fade',
+			captions : true
+		});
+	});
+</script>
+
+<script>
+	$(function() {
+		$('.header')
+				.each(
+						function() {
+							var $header = $(this), $window = $(window), $headerClone = $header
+									.contents().clone(), $headerCloneContainer = $('<div class="page-header-clone"></div>'), threshold = $header
+									.offset().top
+									+ $header.height();
+							$headerCloneContainer.append($headerClone);
+							$headerCloneContainer.appendTo('body');
+							$window.on('scroll', function() {
+								if ($window.scrollTop() > threshold) {
+									$headerCloneContainer.addClass('visible');
+								} else {
+									$headerCloneContainer.removeClass('visible');
+								}
+							});
+						});
+	});
+</script>
+<script src="js/jqbar.js"></script>
+<script>
+	$(function() {
+		$('.bar-1').jqbar({
+			label : 'PHOTOSHOP',
+			value : 95,
+			barColor : '#8b9bbb'
+		});
+		$('.bar-2').jqbar({
+			label : 'ILLUSTRATOR',
+			value : 85,
+			barColor : '#8b9bbb'
+		});
+		$('.bar-3').jqbar({
+			label : 'HTML5',
+			value : 90,
+			barColor : '#8b9bbb'
+		});
+		$('.bar-4').jqbar({
+			label : 'CSS3',
+			value : 87,
+			barColor : '#8b9bbb'
+		});
+		$('.bar-5').jqbar({
+			label : 'JAVA SCRIPT / JQUERY',
+			value : 70,
+			barColor : '#8b9bbb'
+		});
+	});
+</script>
+</head>
+<body>
+	<header id="HOME" class="header">
+		<div class="inner clearfix">
+			<h1 class="site-logo">
+				<a href="">HELLO IT'S SOYI'S PORTFOLIO</a>
+			</h1>
+			<h3>포트폴리오 제작중입니다</h3>
+			<p>KIM SOYI</p>
+			<nav class="primary-nav" role="navigation">
+				<ul>
+					<li><a href="#HOME">HOME</a></li>
+					<li><a href="#ABOUT">ABOUT</a></li>
+					<li><a href="#SERVICES">SERVICES</a></li>
+					<li><a href="#WORKS">WORKS</a></li>
+					<li><a href="#CONTACT">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+	<section id="ABOUT">
+		<div id="about_wrap1">
+			<h2>
+				<a href="#">ABOUT</a>
+			</h2>
+
+			<div id="title">
+				<p class="marks">"</p>
+				<p class="ti_text">안녕하세요 더 나은 개발자를 꿈꾸는 김소이 입니다.</p>
+				<p class="marks">"</p>
+
+			</div>
+
+			<div id="about_wrap2">
+				<div class="pictures">
+					<article class="box1"></article>
+					<article class="box2"></article>
+					<article class="box3"></article>
+					<article class="box4"></article>
+				</div>
+
+				<table class="text" border="0">
+					<tr>
+						<td class="aa">NAME</td>
+						<td colspan="2" class="bb">김 소 이</td>
+					</tr>
+					<tr>
+						<td class="aa">AGE</td>
+						<td colspan="2" class="bb">만 <span>29</span>세
+						</td>
+					</tr>
+					<tr>
+						<td class="aa">BIRTH</td>
+						<td colspan="2" class="bb"><span>1992 · 10 · 18</span></td>
+					</tr>
+					<!-- 					<tr>
+						<td class="aa">INTEREST</td>
+						<td colspan="2" class="bb">음악 감상 · 영화 관람</td>
+					</tr> -->
+					<tr>
+						<td rowspan="2" class="aa">EDUCATION</td>
+						<td class="bb">전남대학교 식물생명공학부 졸업</td>
+						<td class="cc">2015. 02</td>
+					</tr>
+					<tr>
+						<td class="bb"><span>[NCS]</span> 인터렉티브 <span>UI/UX</span>
+							스마트 웹디자인 과정 수료</td>
+						<td class="cc">2017. 12</td>
+						<td class="bb">e-IoT 플랫폼 융합 SW 개발 과정 수료</td>
+						<td class="cc">2021. 12</td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="aa">LICENSE</td>
+						<td class="bb"><span>GTQ</span> 그래픽 기술 자격 <span>2</span>급</td>
+						<td class="cc">2017. 06</td>
+					</tr>
+					<tr>
+						<td class="bb">컴퓨터 그래픽스 운용기능사</td>
+						<td class="cc">2017. 10</td>
+					</tr>
+					<tr>
+						<td class="bb">정보처리기사 필기 합격</td>
+						<td class="cc">2022. 01</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="SERVICES">
+		<h2>
+			SERVICES<br>&amp;<br>SIKLLS
+		</h2>
+		<div id="services_wrap">
+			<div class="section">
+				<p class="s1">WEB RENEWAL</p>
+				<p class="s2">FRONT-END DESIGN</p>
+				<p class="s3">RESPONSIVE DESIGN</p>
+			</div>
+
+			<div id="skill_graph">
+				<div class="bar-1"></div>
+				<div class="bar-2"></div>
+				<div class="bar-3"></div>
+				<div class="bar-4"></div>
+				<div class="bar-5"></div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<section id="WORKS">
+		<h2>
+			<a href="#">WORKS</a>
+		</h2>
+		<div class="blank"></div>
+		<div class="silder">
+			<div>
+				<a href="portfolio/pf_hyatt/index.html" target="_blank"> <img
+					src="images/pf1.jpg" alt="img1"
+					title="[리뉴얼 / 반응형 사이트] HYATT REGENCY JEJU (하얏트 리젠시 제주)">
+				</a>
+			</div>
+			<div>
+				<a href="portfolio/pf_kobaco/index.html" target="_blank"> <img
+					src="images/pf2.jpg" alt="img2"
+					title="[리뉴얼 / 반응형 사이트] KOBACO (한국방송광고진흥공사)">
+				</a>
+			</div>
+			<div>
+				<a href=portfolio/pf_kbank/index.html " target="_blank"> <img
+					src="images/pf3.jpg" alt="img3"
+					title="[리뉴얼 / 반응형 사이트] K-bank (케이뱅크)">
+				</a>
+			</div>
+			<div>
+				<a href="portfolio/pf_hanssem/index.html" target="_blank"> <img
+					src="images/pf4.jpg" alt="img4"
+					title="[리뉴얼 / 반응형 사이트] HANSSEM (한샘닷컴)">
+				</a>
+			</div>
+			<div>
+				<a href="portfolio/pf_nikon/index.html" target="_blank"> <img
+					src="images/pf5.jpg" alt="img4"
+					title="[리뉴얼 / 반응형 사이트] NICON (니콘 코리아)">
+				</a>
+			</div>
+			<div>
+				<a href="portfolio/pf_ddp/index.html" target="_blank"> <img
+					src="images/pf6.jpg" alt="img4"
+					title="[리뉴얼 / 반응형 사이트] DDP (동대문디자인플라자)">
+				</a>
+			</div>
+		</div>
+		<div class="blank"></div>
+	</section>
+
+	<footer id="CONTACT">
+		<div id="contact_wrap">
+			<h2>
+				<a href="#">CONTACT</a>
+			</h2>
+			<div id="text">
+				<p class="c1">E-MAIL</p>
+				<p class="c2">soikim1018@gmail.com</p>
+				<p class="c1">PHONE</p>
+				<p class="c2">(+82) 010 - 6231 - 7258</p>
+				<p class="c1">ADDRESS</p>
+				<p class="c2">65, Majae-ro, Seo-gu, Gwangju, Republic of Korea</p>
+			</div>
+
+			<div id="sns">
+				<a href="https://www.facebook.com/kso222" class="sns1"><img
+					src="images/facebook_icon.png" alt=""></a> <a
+					href="https://www.instagram.com/s0.yi" class="sns2"><img
+					src="images/instagram_icon.png" alt=""></a>
+			</div>
+			<div class="copyright">
+				<p>COPYRIGHT(C) KIMSOYI PORTFOLIO RESERVED.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+

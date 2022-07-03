@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300|Ruda');
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+/*reset*/
+* {margin:0; padding:0;}
+ol,ul,li {list-style: none;}
+a {outline:0; text-decoration:none; color:#363636;}
+img {border:0;}
+body {font:20px 'Ruda'; color:#363636;}
+
+/*레이아웃*/
+header {position:fixed; width:15%; height: 100%; 
+	background:#fff; top:0px; left:0px; trasition: all 0.5s;}
+nav {position:relative; width:85%; height: 35px; background:#212121;
+	margin-left:15%; transition:all 0.5s;}
+section {width:85%; position:relative; margin-left:15%;}
+article {float:left;}
+article:nth-child(1) {width:70%; height:430px; background:#ddd;}
+article:nth-child(2) {width:15%; height:430px; background:#fff;}
+article:nth-child(3) {width:15%; height:430px; background:#aaa;}
+article:nth-child(4) {width:20%; height:310px; background:#bbb;}
+article:nth-child(5) {width:20%; height:310px; background:#fff;}
+article:nth-child(6) {width:40%; height:310px; background:#ccc;}
+article:nth-child(7) {width:20%; height:310px; background:#fff;}
+article:nth-child(8) {width:40%; height:310px; background:#ddd;}
+article:nth-child(9) {width:20%; height:310px; background:#eee;}
+article:nth-child(10) {width:20%; height:310px; background:#fff;}
+article:nth-child(11) {width:20%; height:310px; background:#aaa;}
+article>div {position:relative; width: 100%; height: 100%; overflow:hidden; cursor:pointer;}
+article:nth-child(2)>div{cursor:default;}
+article:nth-child(7)>div{cursor:default;}
+
+
+/*header*/
+header h1 {width:160px; height:194px; background:url("../images/logo_1.png") no-repeat 0px 0px; 	background-size:100% 100%; 
+	position: absolute; top:50px; left:50%; margin-left: -75px; text-indent: -99999px; }
+#gnb {position:absolute; top:320px; left:30px;}
+#gnb .eng {display: block; padding:17px 40px; font-size:19px; transition:all 0.5s;}
+#gnb .kor {font-family: 'Nanum Gothic', sans-serif; display: none; padding:17px 40px; font-size:19px; font-weight: 100; transition:all 0.5s;}
+.sns {width: 90px; height: 47px; position: absolute; bottom: 40px; left:50%; margin-left: -45px;}
+.sns a {float:left;}
+/*header hover*/
+#gnb a:hover span.kor {display: block; color:#61609b;}
+#gnb a:hover span.eng {display: none;}
+
+
+/*nav*/
+nav a {font-size: 15px; font-weight:100; color:#fff;}
+nav li:nth-child(1){position:absolute; top: 6px; right: 225px;}
+nav li:nth-child(2){position:absolute; top: 6px; right: 127px;}
+nav li:nth-child(3){position:absolute; top: 6px; right: 10px;}
+.navs .fa{font-size:13px;}
+.navs .aaa{font-size: 2px; margin-top: -3%;}
+
+/*images*/
+article .bg1 {background:url("../images/img1.png")}
+article .bg2 {background:url("../images/img2.png")}
+article .bg3 {background:url("../images/img3.png")}
+article .bg4 {background:url("../images/img4.png")}
+article .bg5 {background:url("../images/img5.png")}
+article .bg6 {background:url("../images/img6.png")}
+article .bg7 {background:url("../images/img7.png")}
+/*image box*/
+article .bg {background-size: cover; }
+article .bg span{font:80px 'Raleway' ; color:#fff; box-sizing:border-box; opacity: 0; font-weight: bold;
+	position:absolute; bottom:-100px; right:10px; margin-bottom:-20px; transition:all 0.5s;}
+article .bg1 span {font-size:90px;}
+article .bg6 span {font-size:60px; right:3px;}
+/*image box hover*/
+article:hover .bg span {position:absolute; bottom:0px; opacity:1;}
+
+/*text box*/
+article .txt {background-color: #fff; box-sizing:border-box; padding:40px 30px; transition:all 1s;}
+article:nth-child(2) .txt i {font-size: 300px; color:#f4f4f4; opacity:1; transition:all 1s; position: absolute; top:-40px; right: -40px; transform:rotateX(180deg);}
+article:nth-child(5) .txt i {font-size: 230px; color:#f4f4f4; position: absolute; bottom:-40px; right: -40px; transition:all 1s;}
+article:nth-child(7) .txt {color:#f4f4f4; background-color: #f4f4f4;}
+article:nth-child(10) .txt i {font-size: 230px; color:#f4f4f4; position: absolute; bottom:-10px; right: -50px; transition:all 1s;}
+article .txt strong {font-size: 30px; font-weight: bold ;color: #6f6f6f; position:absolute; top:80px; transition:all 1s;}
+article .txt em {font-size: 11px; color: #c5c5c5; position: absolute; left:15px; bottom: 70px; transition:all 1s;}
+/*text box hover*/
+article:nth-child(2):hover .txt i {color:#c2c1e0;}
+article:nth-child(5):hover .txt i {font-size:290px;}
+article:nth-child(7):hover .txt {background-color: #c2c1e0;}
+article:hover .txt em {color: #6f6f6f;}
+article:nth-child(10):hover .txt i {font-size:290px;}
+article:hover .txt strong {font-size: 45px; color: #61609b; position:absolute; top:45%; text-align: center;}
+
+
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+	header {position:relative; width:100%; height: 390px;}
+	nav {position:absolute; width:100%; top:0; left:0; margin-left:0%;}
+	section {width:100%; margin-left:0%;}
+	header h1{background-image: url("../images/logo_1.png"); top:70px; left:50%; margin-left: -80px;}
+	.bar{width: 100%; height: 80px; background-color: #ebebeb;
+		position: relative; top: 310px;}
+	#gnb {width: 87.5%; height: 80px; top:0px; left:50%; margin-left: -43.75%; z-index: 20;}
+	#gnb li {float: left; margin-top: 8px; }
+	#gnb .eng {font-size: 26px;}
+	#gnb .kor {font-size: 26px;} /*호버했을때 안 움직이게 하고 싶은데 안돼요 ㅠㅠㅠㅠㅠ*/
+	.menu7 {display: none;}  
+	.menu8 {display: none;} 
+	.sns {display:none;}
+	article:nth-child(2) .txt i {top:-40px; right: -65px;}
+	article:hover .txt strong {font-size: 35px;}
+	article:nth-child(1) {width:60%; height:430px; background:#ddd;}
+	article:nth-child(2) {width:20%; height:430px; background:#fff;}
+	article:nth-child(3) {width:20%; height:430px; background:#aaa;}
+	article .bg span{font-size:50px; margin-bottom:-11px}
+	article .bg6 span {font-size:40px; margin-bottom:-9px}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	header {position:relative; width:100%; height: 200px;}
+	nav {position:absolute; width:100%; top:0; left:0; margin-left:0%;}
+	section {width:100%; margin-left:0%;}
+	header h1{background-image: url("../images/logo_2.png"); width:220px; height:103px; top:70px; left:5%; margin-left: 0px;}
+	#gnb {top:85px; left:52%;  height: 80px;}
+	#gnb li {float: left; margin-top: 8px;}
+	#gnb .eng {font-size: 22px; padding:17px 10px;}
+	#gnb .kor {font-size: 22px; padding:17px 10px;}
+	.menu3 {display: none;}
+	.menu6 {display: none;}
+	.menu7 {display: none;} 
+	.menu8 {display: none;} 
+	.sns {display:none;}
+	article:nth-child(2) .txt i {top:-40px; right: -65px;}
+	article:nth-child(5) .txt i {font-size: 180px;}
+	article .txt strong {font-size: 23px; padding:0; margin-left: -2px;}
+	article:hover .txt strong {font-size: 27px; padding:0; margin-left: -2px;}
+	article:nth-child(1) {width:60%; height:430px; background:#ddd;}
+	article:nth-child(2) {width:20%; height:430px; background:#fff;}
+	article:nth-child(3) {width:20%; height:430px; background:#aaa;}
+	article .bg span{font-size:50px; margin-bottom:-11px}
+	article .bg6 span {font-size:40px; margin-bottom:-9px}
+}
+
+@media screen and (min-width: 780px) and (max-width: 1023px) {
+	header {position:relative; width:100%; height: 175px;}
+	nav {position:absolute; width:100%; top:0; left:0; margin-left:0%;}
+	section {width:100%; margin-left:0%;}
+	article:nth-child(1) {width:100%; height:400px;}
+	article:nth-child(2) {width:20%; height:300px;}
+	article:nth-child(3) {width:30%; height:300px;}
+	article:nth-child(4) {width:30%; height:300px;}
+	article:nth-child(5) {width:20%; height:300px;}
+	article:nth-child(6) {width:33.3333%; height:300px;}
+	article:nth-child(7) {width:33.3333%; height:300px;}
+	article:nth-child(8) {width:33.3333%; height:300px;}
+	article:nth-child(9) {width:33.3333%; height:300px;}
+	article:nth-child(10) {width:33.3333%; height:300px;}
+	article:nth-child(11) {width:33.3333%; height:300px;}
+	header h1{background-image: url(images/logo_2.png); width:190px; height:88px; top:64px; left:5%; margin-left: 0px;}
+	#gnb {top:85px; left: 45%;  height: 320px;}
+	#gnb li {float: left;  margin-top: 0px;}
+	#gnb .eng {font-size: 20px; padding:17px 7px;}
+	#gnb .kor {font-size: 20px; padding:17px 7px;}
+	.menu3 {display: none;}
+	.menu6 {display: none;}
+	.menu7 {display: none;} 
+	.menu8 {display: none;} 
+	.sns {display:none;}
+	article:nth-child(2) .txt i {font-size: 250px; top:-40px; right: -55px;}
+	article:nth-child(5) .txt i {font-size: 140px;}
+	article:nth-child(5):hover .txt i {font-size: 230px;}
+	article:nth-child(8) .txt i {font-size: 180px;}
+	article .txt strong {font-size: 18px; padding:0; margin-left: -5px;}
+	article:hover .txt strong {font-size: 20px; padding:0; margin-left: -5px; top:50%}
+	article .txt em {font-size: 10px; left:10px ; bottom: 60px; color: #c0c0c0;}
+	article .bg span{font-size:50px; margin-bottom:-11px}
+	article .bg6 span {font-size:40px; margin-bottom:-9px}
+}
+
+@media screen and (min-width: 640px) and (max-width: 779px) {
+	header {position:relative; width:100%; height: 150px;}
+	nav {position:absolute; width:100%; top:0; left:0; margin-left:0%;}
+	section {width:100%; margin-left:0%;}
+	article:nth-child(1) {width:100%; height:230px;}
+	article:nth-child(2) {width:20%; height:190px;}
+	article:nth-child(3) {width:30%; height:190px;}
+	article:nth-child(4) {width:30%; height:190px;}
+	article:nth-child(5) {width:20%; height:190px;}
+	article:nth-child(6) {width:33.3333%; height:190px;}
+	article:nth-child(7) {width:33.3333%; height:190px;}
+	article:nth-child(8) {width:33.3333%; height:190px;}
+	article:nth-child(9) {width:33.3333%; height:190px;}
+	article:nth-child(10) {width:33.3333%; height:190px;}
+	article:nth-child(11) {width:33.3333%; height:190px;}
+	header h1{background-image: url("../images/logo_2.png"); width:150px; height:69px; top:61px; left:3%; margin-left: 0px;}
+	#gnb {top:70px; left:38%;  height: 320px;}
+	#gnb li {float: left; margin-left: 0%; margin-top: 0px;}
+	#gnb .eng {font-size: 17px; padding:17px 11px;}
+	#gnb .kor {font-size: 17px; padding:17px 11px;}
+	.menu3 {display: none;}
+	.menu6 {display: none;}
+	.menu7 {display: none;} 
+	.menu8 {display: none;} 
+	.sns {display:none;}
+	article:nth-child(2) .txt i {font-size: 250px; top:-40px; right: -55px;}
+	article:nth-child(5) .txt i {font-size: 180px;}
+	article:nth-child(5):hover .txt i {font-size: 230px;}
+	article:nth-child(8) .txt i {font-size: 1680px;}
+	article .txt strong {font-size: 15px; padding:0; margin-left: -9px;}
+	article:hover .txt strong {font-size: 17px; padding:0; margin-left: -16px; top:50%}
+	article .txt em {font-size: 1px; left:0px; padding:10px; bottom: 25px;}
+	article .bg span{font-size:35px; margin-bottom:-8px}
+	article .bg6 span {font-size:30px; margin-bottom:-6px}
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {  /*비율고치기!!!!*/
+	header {position:relative; width:100%; height: 136px;}
+	nav {display:none;}
+	section {width:100%; margin-left:0%;}
+	article:nth-child(1) {width:100%; height:230px;}
+	article:nth-child(2) {width:20%; height:190px;}
+	article:nth-child(3) {width:20%; height:190px;}
+	article:nth-child(4) {width:30%; height:190px;}
+	article:nth-child(5) {width:30%; height:190px;}
+	article:nth-child(6) {width:30%; height:190px;}
+	article:nth-child(7) {width:20%; height:190px;}
+	article:nth-child(8) {width:50%; height:190px;}
+	article:nth-child(9) {width:40%; height:190px;}
+	article:nth-child(10) {width:30%; height:190px;}
+	article:nth-child(11) {width:30%; height:190px;}
+	header h1{background-image: url("../images/logo_2.png"); width:130px; height:63px; top:21px; left:50%; margin-left: -65px;}
+	#gnb {top:89px; left:0%; width: 100%; height: 170px;}
+	#gnb li {float: left; margin-left: 6%; margin-top: 0px;}
+	#gnb .eng {font-size: 16px; padding:17px 7px;}
+	#gnb .kor {font-size: 16px; padding:17px 7px;}
+	.menu3 {display: none;}
+	.menu6 {display: none;}
+	.menu7 {display: none;} 
+	.menu8 {display: none;} 
+	.sns {display:none;}
+	article:nth-child(2) .txt i {font-size: 250px; top:-40px; right: -55px;}
+	article:nth-child(5) .txt i {font-size: 180px;}
+	article:nth-child(5):hover .txt i {font-size: 230px;}
+	article:nth-child(8) .txt i {font-size: 180px;}
+	article .txt strong {font-size: 15px; padding:0; margin-left: -6px;}
+	article:hover .txt strong {font-size: 17px; padding:0; margin-left: -6px; top:50%}
+	article .txt em {font-size: 1px; left:0px; padding:10px;bottom: 25px;}
+	article .bg span{font-size:35px; margin-bottom:-10px}
+	article .bg6 span {font-size:30px; margin-bottom:-6px}
+}
+@media screen and (max-width: 479px) {
+	header {position:fixed; width:100%; height: 70px; z-index: 5;}
+	nav {display:none;}
+	section {width:100%; margin-left:0%; z-index: 4;}
+	article {display: none;}
+	article:nth-child(1) {display:block; position:fixed; width:100%; height:100%;}
+	article:nth-child(1) span {display: none;}
+	header h1{background-image: url("../images/logo_2.png"); width:90px; height:44px; top:18px; left:50%; margin-left: -45px;}
+	#gnb {width: 150px; height: 130px; top: 100px; left:50%; margin-left: -75px; }
+	#gnb span {width: 100% ; background: #28278f; box-sizing:border-box; margin:22px 0px; border-radius: 10px; opacity: 0.5;  color:#fff;}
+	#gnb .eng {font-size: 12px; padding:10px 5px; text-align: center;}
+	#gnb .kor {font-size: 12px; padding:10px 5px; text-align: center; trasition: all 0.5s;}
+	#gnb a:hover span.kor {display: block; opacity: 1; color:#fff;}
+	#gnb a:hover span.eng {display: none;}
+	.sns {display:none;}	
+	.menu7 {display: none;} 
+	.menu8 {display: none;} 
+}
+
+

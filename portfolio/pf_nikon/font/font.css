@@ -1,0 +1,29 @@
+@font-face{
+	font-family: 'NBGR'; /*a01 : 폰트를 구분할 수 있는 이름*/
+	src: url('NanumBarunGothic.eot');
+	src: local(※), url('NanumBarunGothic.woff') format('woff')
+}
+@font-face{
+	font-family: 'NBGB'; 
+	src: url('NanumBarunGothicBold.eot');
+	src: local(※), url('NanumBarunGothicBold.woff') format('woff')
+}
+
+@font-face{
+	font-family: 'NBGU'; 
+	src: url('NanumBarunGothicUltraLight.eot');
+	src: local(※), url('NanumBarunGothicUltraLight.woff') format('woff')
+}
+
+@font-face{
+	font-family: 'NBGL'; 
+	src: url('NanumBarunGothicLight.eot');
+	src: local(※), url('NanumBarunGothicLight.woff') format('woff')
+}
+
+@font-face{
+	font-family: 'ver'; 
+	src: url('verdana.eot');
+	src: local(※), url('verdana.woff') format('woff')
+}
+
